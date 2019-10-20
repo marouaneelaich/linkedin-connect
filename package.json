@@ -1,0 +1,28 @@
+{
+  "name": "suggestions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "format": "pretty-quick",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^1.18.2",
+    "pretty-quick": "^2.0.0",
+    "puppeteer": "^1.20.0",
+    "yargs": "^14.2.0"
+  },
+  "devDependencies": {
+    "husky": "^3.0.9"
+  }
+}
