@@ -7,8 +7,10 @@ const headless = !!argv.headless
 async function run() {
   const { page, browser } = await init(headless)
 
+  console.log('Login in...')
   await login(page)
 
+  console.log('Preparing...')
   await connect(
     page,
     keywords
@@ -16,5 +18,10 @@ async function run() {
 
   browser.close()
 }
+
+process.on('SIGINT', function() {
+  // exit gracefully
+  process.exit()
+})
 
 run()
