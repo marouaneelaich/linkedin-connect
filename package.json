@@ -1,6 +1,6 @@
 {
-  "name": "suggestions",
-  "version": "1.0.0",
+  "name": "linkedin-connect",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,9 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "bin": {
+    "linkedin-connect": "./index.js"
   },
   "keywords": [],
   "author": "",
