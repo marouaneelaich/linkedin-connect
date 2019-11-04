@@ -8,6 +8,11 @@ const headless = !!argv.headless
 const username = argv.username
 const password = argv.password
 
+if (!password || !username) {
+  console.log('You should specify username and password')
+  process.exit(1)
+}
+
 async function run() {
   const { page, browser } = await init(headless)
 
